@@ -1,0 +1,61 @@
+.google-pay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  .gpay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto 0; /* Removed margin from top */
+  }
+  
+  .google-pay-box {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-pay-form {
+    text-align: center;
+  }
+  
+  .google-pay-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .google-pay-form #google-pay-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .google-pay-form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-pay-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .google-pay-form pre {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }

@@ -1,0 +1,58 @@
+.admin-dashboard {
+    padding: 20px;
+  }
+  
+  .job-applications {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .job-application {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .job-application h3 {
+    margin-top: 0;
+  }
+  
+  .job-application p {
+    margin: 5px 0;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .update-btn{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .delete-btn {
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .update-btn:hover,
+  .delete-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive CSS */
+  @media (max-width: 768px) {
+    .job-application {
+      width: 100%;
+    }
+  }
+  
