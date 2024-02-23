@@ -1,0 +1,67 @@
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px); /* Adjusted height to account for the height of the AdminNav */
+    background-image: url('../images/sign2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 64px; /* Added margin-top to create space between AdminNav and content */
+}
+
+/* Remaining CSS rules for .play-content, .play-heading, .play-description, .ord-now-button, and media queries remain the same */
+
+  .play-content {
+    text-align: center;
+    color: white; /* Ensure text color is set for better visibility */
+  }
+  
+  .play-heading {
+    font-size: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .play-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ord-now-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ord-now-button:hover {
+    background-color: #333; /* Darken the background color on hover for better visual feedback */
+  }
+  
+  @media (max-width: 768px) {
+    .play-content {
+      padding: 0 1rem; 
+    }
+  
+    .play-heading {
+      font-size: 2rem; 
+    }
+  
+    .play-description {
+      font-size: 1rem; 
+    }
+  
+    .ord-now-button {
+      padding: 0.8rem 1.5rem; 
+      font-size: 1rem; 
+    }
+    
+    /* Adjust image size for smaller screens */
+    .play {
+      background-size: contain;
+    }
+  }
+  

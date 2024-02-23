@@ -1,0 +1,56 @@
+/* About Page Styles */
+.about-page {
+  max-width: 800px;
+  padding: 40px;
+  background-color: rgba(255, 229, 197, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+
+.Ah {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ahh {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px 0 10px;
+}
+
+.para, .alist {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.alist {
+  padding-left: 20px;
+}
+
+.about-page ul li {
+  margin-bottom: 10px;
+}
+
+/* Outer About Container */
+.outer-about {
+  background-image: url('../images/home.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw; /* Change from 100% to 100vw */
+  height: 100vh;
+  color: black;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  .about-page {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+}

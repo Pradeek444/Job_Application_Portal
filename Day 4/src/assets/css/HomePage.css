@@ -1,0 +1,66 @@
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/sign2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .display-content {
+    text-align: center;
+  }
+  
+  .img1 {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .display-heading  {
+    font-size: 100px;
+    
+    color: white;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .display-description {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .order-now-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color:black;
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-now-button:hover {
+    background-color:black;
+  }
+  
+  @media (max-width: 768px) {
+    .display-content {
+      padding: 0 1rem; 
+    }
+  
+    .display-heading {
+      font-size: 2rem; 
+    }
+  
+    .display-description {
+      font-size: 1rem; 
+    }
+  
+    .order-now-button {
+      padding: 0.8rem 1.5rem; 
+      font-size: 1rem; 
+    }
+  }

@@ -1,0 +1,63 @@
+.call {
+    /* background-image: url("../images/h3.avif"); */
+    background-size: cover;
+    height: 100vh;
+}
+
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 7rem auto 0; /* Removed margin from top */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased margin for more space */
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group textarea {
+    height: 100px;
+}
+
+.create-job-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-job-btn:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 768px) {
+    .admin-dashboard {
+        width: 90%;
+    }
+}
