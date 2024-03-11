@@ -1,0 +1,134 @@
+// variables
+@mixin bp($class) {
+	@if $class == mobile {
+		@media (min-width: 640px) {
+			@content;
+		}
+	} @else if $class == tablet {
+		@media (min-width: 768px) {
+			@content;
+		}
+	} @else if $class == laptop {
+		@media (min-width: 1024px) {
+			@content;
+		}
+	} @else if $class == desktop {
+		@media (min-width: 1280px) {
+			@content;
+		}
+	} @else if $class == cinema {
+		@media (min-width: 1536px) {
+			@content;
+		}
+	}
+}
+
+// Variables
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+$base-font-family: "Roboto Condensed", sans-serif;
+$g-line-height: 1.5 !default;
+$g-spacing: $g-line-height * 1em;
+$black: #000;
+$white: #fff;
+
+// global
+body,
+html {
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: "roboto condensed", sans-serif;
+	font-weight: 300;
+	.wrapper {
+		max-width: 1200px;
+	}
+	h2 {
+		font-weight: 300;
+		font-size: 200%;
+		line-height: 1.2;
+	}
+}
+.button {
+	position: relative;
+	display: table;
+	padding: $g-spacing / 2 $g-spacing * 2;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	margin-top: $g-spacing;
+	text-transform: uppercase;
+	// padding: 1em 1em;
+	margin-left: 20%;
+	&:hover {
+		background: lighten(#222, 5%);
+	}
+}
+
+// Feature Block Offset
+.feature-block-offset {
+	margin-top: -50px;
+}
+.top {
+	height: 3em;
+	display: grid;
+	grid-template-columns:
+		8em
+		auto;
+	grid-template-rows: auto;
+	@include bp(laptop) {
+		height: 6em;
+	}
+	.first {
+		background: #bf865e;
+		@include bp(laptop) {
+			background: transparent;
+		}
+	}
+	.second {
+		background: #bf865e;
+	}
+}
+.fb-offset {
+	color: #fff;
+	padding: 0;
+	width: 100%;
+	.fb-offset-inner {
+		display: flex;
+		flex-direction: column-reverse;
+		background: #bf865e;
+		@include bp(laptop) {
+			display: grid;
+			grid-template-columns: 6em auto auto;
+			grid-template-rows: auto;
+		}
+		.content {
+			padding: 1em 1em 3em;
+			@include bp(mobile) {
+				padding: 1em 15% 3em;
+			}
+		}
+		.image {
+			background-image: url("https://img.freepik.com/free-photo/portrait-professional-elegant-businessman_23-2150917158.jpg?t=st=1708420402~exp=1708424002~hmac=e2d963fea5d4340ddd2f266a03fc6bc5280fdbc8273fc768936e651133735d51&w=740");
+			background-size: cover;
+			background-position: center;
+			box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.16);
+			margin: 0 0 -5em -2em;
+			width: 100%;
+			width: 100%;
+			height: 350px;
+			@include bp(mobile) {
+				height: 500px;
+				margin: 0 0 -6em -6em;
+				background-position: right top;
+			}
+			@include bp(laptop) {
+				width: 650px;
+				height: 600px;
+			}
+		}
+	}
+}
